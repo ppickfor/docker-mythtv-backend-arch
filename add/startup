@@ -1,0 +1,3 @@
+#!/bin/bash
+find /dev/dvb  -type c|xargs chgrp video
+exec supervisord -c /etc/supervisord.conf -n
